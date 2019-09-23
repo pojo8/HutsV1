@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.GUI.OrderEntry">
+  <grid id="27dc6" binding="UiPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="804" height="784"/>
+    </constraints>
+    <properties>
+      <background color="-3223858"/>
+      <font name="Liberation Mono" size="12"/>
+    </properties>
+    <border type="none" title="" title-justification="2"/>
+    <children>
+      <splitpane id="c9a70">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="419"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-3223858"/>
+          <dividerLocation value="0"/>
+          <dividerSize value="0"/>
+          <orientation value="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <splitpane id="dcf7e">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <dividerSize value="15"/>
+              <orientation value="0"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <splitpane id="4b17d">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="39377" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3223858"/>
+                      <maximumSize width="86" height="86"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="4ab93" class="javax.swing.JButton" binding="submitListButton" default-binding="true">
+                        <constraints>
+                          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Submit list"/>
+                          <toolTipText value="Adds all items in the list to the application"/>
+                        </properties>
+                      </component>
+                      <vspacer id="19ab8">
+                        <constraints>
+                          <grid row="0" column="1" row-span="4" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <hspacer id="b105c">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="2bc64" class="javax.swing.JButton" binding="clearListButton" default-binding="true">
+                        <constraints>
+                          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Clear item"/>
+                          <toolTipText value="Clears all the items in the list"/>
+                        </properties>
+                      </component>
+                      <component id="2ea45" class="javax.swing.JButton" binding="addToListButton" default-binding="true">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Add to List"/>
+                          <toolTipText value="Adds the input dat to the list"/>
+                        </properties>
+                      </component>
+                      <component id="68fe1" class="javax.swing.JButton" binding="clearInputButton" default-binding="true">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="Clear Input"/>
+                          <toolTipText value="Clears the above input data"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="adb5e" binding="tablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <minimumSize width="500" height="300"/>
+                    </properties>
+                    <border type="etched" title="Input List"/>
+                    <children>
+                      <scrollpane id="86839">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <horizontalScrollBarPolicy value="32"/>
+                        </properties>
+                        <border type="none">
+                          <font/>
+                        </border>
+                        <children>
+                          <component id="ca6d8" class="javax.swing.JTable" binding="inputList">
+                            <constraints/>
+                            <properties>
+                              <alignmentX value="1.0"/>
+                              <alignmentY value="1.0"/>
+                              <autoCreateColumnsFromModel value="true"/>
+                              <autoCreateRowSorter value="true"/>
+                              <autoResizeMode value="0"/>
+                              <doubleBuffered value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+              <grid id="c70ba" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties>
+                  <background color="-3223858"/>
+                  <foreground color="-5787733"/>
+                </properties>
+                <border type="none">
+                  <title-color color="-14540254"/>
+                </border>
+                <children>
+                  <component id="d49c4" class="javax.swing.JTextField" binding="productNameTextField" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="product name"/>
+                    </properties>
+                  </component>
+                  <splitpane id="17b15">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="200" height="200"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <dividerLocation value="120"/>
+                      <foreground color="-10263709"/>
+                    </properties>
+                    <border type="none" title="Order information"/>
+                    <children>
+                      <splitpane id="cc5c9">
+                        <constraints>
+                          <splitpane position="right"/>
+                        </constraints>
+                        <properties>
+                          <continuousLayout value="true"/>
+                          <dividerLocation value="129"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="b9145" class="javax.swing.JTextField" binding="unitCurrency">
+                            <constraints>
+                              <splitpane position="left"/>
+                            </constraints>
+                            <properties>
+                              <text value="currency"/>
+                            </properties>
+                          </component>
+                          <splitpane id="e7d85">
+                            <constraints>
+                              <splitpane position="right"/>
+                            </constraints>
+                            <properties>
+                              <dividerLocation value="100"/>
+                            </properties>
+                            <border type="none"/>
+                            <children>
+                              <component id="c0aef" class="javax.swing.JTextArea" binding="dateOrderedTextArea" default-binding="true">
+                                <constraints>
+                                  <splitpane position="right"/>
+                                </constraints>
+                                <properties>
+                                  <text value="date ordered"/>
+                                  <toolTipText value="Format: YYYY-DD-MM"/>
+                                </properties>
+                              </component>
+                              <component id="58e07" class="javax.swing.JTextArea" binding="OrderSize">
+                                <constraints>
+                                  <splitpane position="left"/>
+                                </constraints>
+                                <properties>
+                                  <text value="order size"/>
+                                </properties>
+                              </component>
+                            </children>
+                          </splitpane>
+                        </children>
+                      </splitpane>
+                      <component id="9843b" class="javax.swing.JTextField" binding="unitPrice">
+                        <constraints>
+                          <splitpane position="left"/>
+                        </constraints>
+                        <properties>
+                          <text value="Sale price"/>
+                          <toolTipText value="X.00"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </splitpane>
+                  <splitpane id="88633">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="200" height="200"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <dividerLocation value="399"/>
+                    </properties>
+                    <border type="none" title="Vendor information"/>
+                    <children>
+                      <component id="294eb" class="javax.swing.JTextArea" binding="vendorEmail">
+                        <constraints>
+                          <splitpane position="left"/>
+                        </constraints>
+                        <properties>
+                          <text value="Email address"/>
+                        </properties>
+                      </component>
+                      <component id="483ec" class="javax.swing.JTextArea" binding="vendorTriggerLevel">
+                        <constraints>
+                          <splitpane position="right"/>
+                        </constraints>
+                        <properties>
+                          <text value="notify vendor at"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </splitpane>
+                  <component id="d6e3f" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <splitpane id="ad085">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="200" height="200"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <dividerLocation value="425"/>
+                    </properties>
+                    <border type="none" title="Primary contacts"/>
+                    <children>
+                      <component id="a08da" class="javax.swing.JTextField" binding="notifyAtTextField" default-binding="true">
+                        <constraints>
+                          <splitpane position="right"/>
+                        </constraints>
+                        <properties>
+                          <editable value="true"/>
+                          <enabled value="true"/>
+                          <text value="notify contacts at"/>
+                        </properties>
+                      </component>
+                      <splitpane id="9e1c2" binding="companyEmailPane">
+                        <constraints>
+                          <splitpane position="left"/>
+                        </constraints>
+                        <properties>
+                          <continuousLayout value="true"/>
+                          <dividerLocation value="250"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="de940" class="javax.swing.JTextArea" binding="secondaryEmailTextArea" default-binding="true">
+                            <constraints>
+                              <splitpane position="right"/>
+                            </constraints>
+                            <properties>
+                              <text value="Secondary email "/>
+                            </properties>
+                          </component>
+                          <component id="bd87b" class="javax.swing.JTextArea" binding="primaryEmailTextArea" default-binding="true">
+                            <constraints>
+                              <splitpane position="left"/>
+                            </constraints>
+                            <properties>
+                              <text value="Primary email"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </splitpane>
+                    </children>
+                  </splitpane>
+                  <component id="e06c2" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="d5e9" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-3223858"/>
+                    </properties>
+                  </component>
+                  <component id="793e4" class="javax.swing.JLabel" binding="product_label">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Product name"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </splitpane>
+        </children>
+      </splitpane>
+      <toolbar id="c553b">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-3223858"/>
+          <borderPainted value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="58cd9" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="185ad" class="javax.swing.JButton" binding="mainMenu">
+            <constraints/>
+            <properties>
+              <text value="Main menu"/>
+            </properties>
+          </component>
+          <component id="abb43" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="55422" class="javax.swing.JButton" binding="helpButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Help"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <vspacer id="abcd1">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="11" height="419"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="28911">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="581ef">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
